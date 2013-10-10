@@ -1,6 +1,6 @@
 Description
 ===========
-[Ceedling](http://throwtheswitch.org/) is a set of tools and libraries for testing and building C applications. This package adds support to Sublime Text 2 for developing Ceedling applications.
+[Ceedling](http://throwtheswitch.org/) is a set of tools and libraries for testing and building C applications. This package adds support to Sublime Text **3** for developing Ceedling applications.
 
 Ceedling Installation
 =====================
@@ -10,13 +10,17 @@ If you already have the Ruby scripting language installed with RubyGems support,
 
 Package Installation
 ====================
-Bring up a command line in the Packages/ folder of your Sublime user folder, and execute the following:
-> mkdir Ceedling
-> cd Ceedling
-> git init
-> git pull git://github.com/SublimeText/Ceedling.git
+Bring up a command line in a folder where you keep git projects, and execute the following:
 
-When you launch Sublime Text 2, it will pick up the contents of this package so that you can consume the goodness that it provides.
+> git clone https://github.com/SublimeText/Ceedling.git
+
+> cd Ceedling
+
+> git checkout sublime_text_3
+
+Now use any `zip`-compatible tool to compress the folder `Ceedling` into a zip file (the built-in Windows compress utility and the Mac archive utility both work for this). Change the name of the file, including extension, to `Ceedling.sublime-package`. You may need to change settings in Windows to allow changing extensions. Move or copy `Ceedling.sublime-package` to your Sublime user `Installed Packages` folder.
+
+When you launch Sublime Text 3, it will pick up the contents of this package so that you can consume the goodness that it provides.
 
 Features
 ========
